@@ -15,6 +15,10 @@ public class EmployeeDTO {
     LocalDate dateOfJoining;
     Integer salary;
 
+    public EmployeeDTO(){
+
+    }
+
     public EmployeeDTO(String emp_id, String namePrefix, String firstName, String middleInitial, String lastName, String gender, String email, String dateOfBirth, String dateOfJoining, String salary) {
         this.emp_id = emp_id;
         this.namePrefix = namePrefix;
@@ -27,6 +31,8 @@ public class EmployeeDTO {
         setDateOfJoining(dateOfJoining);
         setSalary(salary);
     }
+
+
 
     public LocalDate getDateOfBirth() {
         return dateOfBirth;
@@ -123,4 +129,20 @@ public class EmployeeDTO {
                 ", salary=" + salary +
                 '}';
     }
+
+    public static EmployeeDTO generateEmployee(String[] arrayOfStrings){
+        EmployeeDTO employee = new EmployeeDTO();
+        employee.setEmp_id(arrayOfStrings[0]);
+        employee.setNamePrefix(arrayOfStrings[1]);
+        employee.setFirstName(arrayOfStrings[2]);
+        employee.setMiddleInitial(arrayOfStrings[3]);
+        employee.setLastName(arrayOfStrings[4]);
+        employee.setGender(arrayOfStrings[5]);
+        employee.setEmail(arrayOfStrings[6]);
+        employee.setDateOfBirth(arrayOfStrings[7]);
+        employee.setDateOfJoining(arrayOfStrings[8]);
+        employee.setSalary(arrayOfStrings[9]);
+        return employee;
+    }
+
 }
