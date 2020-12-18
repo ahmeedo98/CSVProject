@@ -1,8 +1,5 @@
 package com.sparta.ahmed.model;
 
-import com.sparta.ahmed.model.EmployeeDAO;
-import com.sparta.ahmed.model.EmployeeDTO;
-
 import java.util.ArrayList;
 
 public class EmployeeWriter implements Runnable {
@@ -15,7 +12,7 @@ public class EmployeeWriter implements Runnable {
 
     @Override
     public void run() {
-        String url = "jdbc:mysql://localhost:3306/csvproject";
+        String url = "jdbc:mysql://localhost:3306/"; // Enter the database name here!!!!!
         EmployeeDAO.connectToDB(url);
         EmployeeDAO.insertData(employees);
     }

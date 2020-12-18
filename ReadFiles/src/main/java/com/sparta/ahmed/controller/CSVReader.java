@@ -1,16 +1,13 @@
 package com.sparta.ahmed.controller;
 
 import com.sparta.ahmed.model.EmployeeDTO;
-//import com.sparta.mg.model.EmployeeDTO;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashSet;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
 
 public class CSVReader {
 

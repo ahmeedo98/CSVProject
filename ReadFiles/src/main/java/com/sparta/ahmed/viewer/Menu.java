@@ -1,6 +1,5 @@
 package com.sparta.ahmed.viewer;
 
-import com.sparta.ahmed.model.EmployeeDAO;
 
 import java.util.Scanner;
 
@@ -22,10 +21,9 @@ public class Menu {
 //            System.out.println("Everything has been deleted");
 //            printStart();
 //        }
-        else if (answer == 2){
+        else if (answer == 2) {
             System.exit(0);
-        }
-        else{
+        } else {
             System.out.println("Please enter 1 or 2");
             printStart();
         }
